@@ -1,0 +1,8 @@
+crewai
+crewai[tools]
+langchain-ollama
+youtube-transcript-api
+fastapi
+uvicorn
+streamlit
+pyyaml
