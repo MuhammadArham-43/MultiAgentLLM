@@ -27,11 +27,7 @@ except Exception as e:
     sys.exit(1)
 
 pipeline = build_pipeline(config)
-
-
-
 app = FastAPI()
-
 
 @app.post("/query/")
 def query(inputs: UserInput) -> dict:

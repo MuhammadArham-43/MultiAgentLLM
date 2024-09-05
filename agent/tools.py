@@ -7,7 +7,7 @@ from utils import _get_ares_api_key, _get_ares_api_url, _get_youtube_api_key, _g
 
 class YoutubeSearchTool(BaseTool):
     name: str = "YoutubeV3API"
-    description: str = "YouTube API for Real-Time Video Caption Searching"
+    description: str = "YouTube API for Real-Time Video Caption Search"
     
     def _run(self, query: Union[Dict, str]) -> dict:
         if type(query) == dict:

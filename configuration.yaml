@@ -1,6 +1,6 @@
 llm:
-  provider: cohere # Choices: [ollama, cohere]
-  model_name: gemma2:2b # Only applicable for ollama
+  provider: cohere        # Choices: [ollama, cohere]
+  model_name: gemma2:2b   # Only applicable for ollama
 server:
   host: "0.0.0.0"
   port: 8080

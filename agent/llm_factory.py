@@ -6,6 +6,7 @@ def getLLM(config: Dict):
         return build_ollama_model(config)
     if config["llm"]["provider"] == "cohere":
         return build_cohere_model()
+    raise NotImplementedError(f"LLM provider {config["llm"]["provider"]} not implemented.")
 
 
 def build_ollama_model(config):
