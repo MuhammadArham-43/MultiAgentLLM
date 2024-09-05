@@ -7,7 +7,7 @@ if [ ! -d "$VENV_DIR" ]; then
     pip install -r requirements.txt
 else source venv/bin/activate
 fi
-ollama serve
+nohup ollama serve &
 set -a
 source .env
 nohup streamlit run client.py &
